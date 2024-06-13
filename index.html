@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>True Indian Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        html {
+            background-color: #FBEEC8;
+            background-image: url("chopsticks.png");
+        }
+        body {
+            text-align: center;
+            position: relative;
+        }
+        header {
+            background-color: rgb(64, 64, 64); /* Set the background color to white */
+            padding: 1px;
+            text-align: center;
+            color: white; /* Set the text color to a contrasting color */
+            width: 100%;
+            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+        }
+        #list {
+            text-align: left;
+        }
+        h1 {
+            font-size: 300%;
+            font-weight: bold;
+            color: red;
+            padding: 0px;
+            margin: 0px;
+        }
+        .button {
+            min-width: 12em;
+            text-align: center;
+            width: 15%;
+            border-radius: 20px;
+            background-color: rgba(255, 119, 100, 0.3);
+            color: rgb(0, 0, 5);
+            position: relative;
+            left: 50px;
+        }
+        .button1 {
+            text-align: center;
+            width: 15%;
+            border-radius: 20px;
+            background-color: rgba(255, 119, 100, 0.3);
+            color: rgb(0, 0, 5);
+            position: relative;
+            left: 0px;
+        }
+        footer {
+            text-align: center;
+            position: relative;
+            font-size: 95%;
+        }
+        input[type='checkbox'] {
+            width: 16px;
+            height: 16px;
+            background: white;
+            border: 2px solid #555;
+        }
+        #score {
+            font-size: 35px;
+            font-weight: bold;
+        }
+        #perc {
+            font-style: italic;
+        }
+        .responsive {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <p><img src="Frame 1.png" width="600" height="111" class="responsive"></p>
+    <div id="toHide">
+        <p><i> The True Indian Test is a parody of the Rice Purity Test.<br /> It's a voluntary opportunity for people to test their desi tendencies and find out<br /> how "indian" they really are. </i></p>
+        <p><strong>Caution: If you score below 90% you bring sharam to your family.</strong></p>
+        <br />
+        Click on every item you have done.
+        <div id="list">
+            <ol>
+                <li> <input type="checkbox" id="1"><label for="1"> Don't wear shoes in the house?</label>
+                    <li> <input type="checkbox" id="2"><label for="2"> Eat rice nearly every single day?</label>
+                    <li> <input type="checkbox" id="3"><label for="3"> Drink chai (tea) multiple times a day?</label>
+                    <li> <input type="checkbox" id="4"><label for="4"> Watch Bollywood movies regularly?</label>
+                    <li> <input type="checkbox" id="5"><label for="5"> Bargain at markets and local shops?</label>
+                    <li> <input type="checkbox" id="6"><label for="6"> Respect elders and seek their blessings by touching their feet?</label>
+                    <li> <input type="checkbox" id="7"><label for="7"> Participate in cricket matches, either watching or playing?</label>
+                    <li> <input type="checkbox" id="8"><label for="8"> Have a joint family system, or maintain close family ties?</label>
+                    <li> <input type="checkbox" id="9"><label for="9"> Eat a lot of spices in cooking?</label>
+                    <li> <input type="checkbox" id="10"><label for="10"> Perform daily puja (prayers) at home?</label>
+                    <li> <input type="checkbox" id="11"><label for="11"> Use local transportation like buses and trains frequently?</label>
+                    <li> <input type="checkbox" id="13"><label for="13"> Enjoy pani puri?</label>
+                    <li> <input type="checkbox" id="14"><label for="14"> Follow a vegetarian diet, or at least have many vegetarian options?</label>
+                    <li> <input type="checkbox" id="15"><label for="15"> Use a lot of WhatsApp for communication?</label>
+                    <li> <input type="checkbox" id="18"><label for="18"> Watch TV serials and soap operas regularly?</label>
+                    <li> <input type="checkbox" id="19"><label for="19"> Celebrate weddings with elaborate and multi-day ceremonies?</label>
+                    <li> <input type="checkbox" id="20"><label for="20"> Use Ayurvedic medicine and home remedies?</label>
+                    <li> <input type="checkbox" id="22"><label for="22"> Use turmeric as a key ingredient for health and beauty treatments?</label>
+                    <li> <input type="checkbox" id="30"><label for="30"> Have a strong sense of community and social gatherings?</label>
+                    <li> <input type="checkbox" id="31"><label for="31"> Follow horoscopes and astrological predictions?</label>
+                    <li> <input type="checkbox" id="36"><label for="36"> Have a strong tradition of storytelling and folklore?</label>
+                    <li> <input type="checkbox" id="37"><label for="37"> Participate in community service and charity?</label>
+                    <li> <input type="checkbox" id="38"><label for="38"> Read newspapers regularly?</label>
+                    <li> <input type="checkbox" id="39"><label for="39"> Enjoy classical music and dance forms?</label>
+                    <li> <input type="checkbox" id="42"><label for="42"> Know and respect various fasting traditions?</label>
+                    <li> <input type="checkbox" id="43"><label for="43"> Prefer eating with hands rather than utensils for certain dishes?</label>
+                    <li> <input type="checkbox" id="44"><label for="44"> Take afternoon naps, especially in hot weather?</label>
+                    <li> <input type="checkbox" id="45"><label for="45"> Follow traditional healing practices?</label>
+                    <li> <input type="checkbox" id="46"><label for="46"> Use coconut and ghee frequently in cooking?</label>
+                    <li> <input type="checkbox" id="49"><label for="49"> Have turmeric milk (haldi doodh) for health benefits?</label>
+                    <li> <input type="checkbox" id="51"><label for="51"> Drink warm/hot water in the morning?</label>
+                    <li> <input type="checkbox" id="52"><label for="52"> Did tutoring in Primary School?</label>
+                    <li> <input type="checkbox" id="53"><label for="53"> Did tutoring in High School?</label>
+                    <li> <input type="checkbox" id="54"><label for="54"> Got your ass beat with an assortment of everyday items?</label>
+                    <li> <input type="checkbox" id="55"><label for="55"> Eat sandwiches using a plastic bag or tissue paper to protect your hands?</label>
+                    <li> <input type="checkbox" id="56"><label for="56"> Went to Saturday Language school?</label>
+                    <li> <input type="checkbox" id="57"><label for="57"> Know bharatnatyam or sitar?</label>
+                    <li> <input type="checkbox" id="58"><label for="58"> Have a stash of plastic bags in the house?</label>
+                    <li> <input type="checkbox" id="59"><label for="59"> Watched Cartoons (Role no.21, Chotta Bheem, Motu Patlu, Oggy and the Cockroaches)?</label>
+                    <li> <input type="checkbox" id="60"><label for="60"> Can’t have a girlfriend/boyfriend until you’re in your late 20s?</label>
+                    <li> <input type="checkbox" id="61"><label for="61"> Have a curfew?</label>
+                    <li> <input type="checkbox" id="62"><label for="62"> Gave away presents that you were gifted?</label>
+                    <li> <input type="checkbox" id="63"><label for="63"> Still ask your parents for permission to go out?</label>
+                    <li> <input type="checkbox" id="64"><label for="64"> Speak fluently in your mother tongue?</label>
+                    <li> <input type="checkbox" id="65"><label for="65"> Fluently speak, read and write in mother language?</label>
+                    <li> <input type="checkbox" id="66"><label for="66"> Study medicine engineering or law?</label>
+                    <li> <input type="checkbox" id="67"><label for="67"> Lied about your marks?</label>
+                    <li> <input type="checkbox" id="68"><label for="68"> Only buy things that are on sale/discounted?</label>
+                    <li> <input type="checkbox" id="69"><label for="69"> Always had oiled hair as a child?</label>
+                    <li> <input type="checkbox" id="70"><label for="70"> Wore matching outfits with your siblings?</label>
+                    <li> <input type="checkbox" id="71"><label for="71"> Eat food with your hand?</label>
+                    <li> <input type="checkbox" id="72"><label for="72"> Speak more mother language than English?</label>
+                    <li> <input type="checkbox" id="73"><label for="73"> Speak your dialect fluently?</label>
+                    <li> <input type="checkbox" id="74"><label for="74"> Drink water with random stuff in it every day?</label>
+                    <li> <input type="checkbox" id="75"><label for="75"> Drink/eat random stuff to improve your health?</label>
+                    <li> <input type="checkbox" id="76"><label for="76"> Do yoga every morning?</label>
+                    <li> <input type="checkbox" id="77"><label for="77"> Get lectured by your parents on the daily?</label>
+                    <li> <input type="checkbox" id="78"><label for="78"> Cut up small pieces of fruit for your family/friends?</label>
+                    <li> <input type="checkbox" id="79"><label for="79"> Have a random mark on your upper arm area?</label>
+                    <li> <input type="checkbox" id="80"><label for="80"> Went to tutoring before primary school?</label>
+                    <li> <input type="checkbox" id="81"><label for="81"> Know how to play carrom?</label>
+                    <li> <input type="checkbox" id="82"><label for="82"> Prefer to use hands rather than a knife and fork?</label>
+                    <li> <input type="checkbox" id="83"><label for="83"> Had a pet fish?</label>
+                    <li> <input type="checkbox" id="84"><label for="84"> Lied about your age for cheaper tickets/entry?</label>
+                    <li> <input type="checkbox" id="85"><label for="85"> Played with beyblades?</label>
+                    <li> <input type="checkbox" id="86"><label for="86"> Believe in random superstitions such as optimal furniture placement?</label>
+                    <li> <input type="checkbox" id="87"><label for="87"> Celebrate most major traditional events?</label>
+                    <li> <input type="checkbox" id="88"><label for="88"> Your parents compare you with your friends/relatives ("the Sharma ji Ka Beta")?</label>
+                    <li> <input type="checkbox" id="89"><label for="89"> Have never heard your parents say they're proud of you/they love you?</label>
+                    <li> <input type="checkbox" id="90"><label for="90"> Swear in your mother language?</label>
+                    <li> <input type="checkbox" id="91"><label for="91"> Bring a wheely shopping trolley?</label>
+                    <li> <input type="checkbox" id="92"><label for="92"> Save sauce packets/napkins from restaurants?</label>
+                    <li> <input type="checkbox" id="93"><label for="93"> Don't use the dishwasher?</label>
+                    <li> <input type="checkbox" id="94"><label for="94"> Have bad eyesight because "you're on the computer too much"?</label>
+                    <li> <input type="checkbox" id="95"><label for="95"> Are guilty of putting up the peace sign for photos?</label>
+                    <li> <input type="checkbox" id="96"><label for="96"> Had pen fights as a child?</label>
+                    <li> <input type="checkbox" id="97"><label for="97"> Your parents/friends have a highkey offensive nickname for you?</label>
+                    <li> <input type="checkbox" id="98"><label for="98"> Have/had an unhealthy obsession with maggi?</label>
+                    <li> <input type="checkbox" id="99"><label for="99"> Your parents show their affection by cutting up small pieces of fruit for you?</label>
+                    <li> <input type="checkbox" id="100"><label for="100"> Eat certain foods to 'cool down' or 'heat up' your body?</label>
+                    <li> <input type="checkbox" id="101"><label for="101"> Feel like you've sinned if you don't get top marks?</label>
+                    <li> <input type="checkbox" id="102"><label for="102"> Get interrogated about your whereabouts/who you were with when you go out?</label>
+                    <li> <input type="checkbox" id="103"><label for="103"> Get money on New Years but your parents 'save' it for you?</label>
+                    <li> <input type="checkbox" id="104"><label for="104"> Drank milk religiously to grow taller?</label>
+                    <li> <input type="checkbox" id="105"><label for="105"> Still live with your parents?</label>
+                    <li> <input type="checkbox" id="106"><label for="106"> Listen/ed to Arijit Singh/AR. Rehman?</label>
+                    <li> <input type="checkbox" id="107"><label for="107"> Fight over paying the bill?</label>
+                    <li> <input type="checkbox" id="108"><label for="108"> Did/Do mostly science and maths subjects?</label>
+                    <li> <input type="checkbox" id="109"><label for="109"> Went on a trip to Lonavala/Khandala/Diu-Daman?</label>
+                    <li> <input type="checkbox" id="110"><label for="110"> Arrive at the airport hours before you're meant to?</label>
+                    <li> <input type="checkbox" id="111"><label for="111"> Wake up before 6am?</label>
+                    <li> <input type="checkbox" id="112"><label for="112"> Ugly cried when you were younger while studying with your parents?</label>                    
+            </ol>
+        </div>
+        <button class="button" id="submit-button">Submit</button>
+    </div>
+    <div id="results" style="display:none;">
+        <h1>Results:</h1>
+        <p id="score"></p>
+        <p id="perc"></p>
+        <button class="button1" id="retake-button">Retake Test</button>
+    </div>
+    <br>
+    <footer>© 2023 True Indian Test. All Rights Reserved.</footer>
+    <script>
+        $(document).ready(function () {
+            $('#submit-button').click(function () {
+                const totalQuestions = 92;
+                let checkedCount = 0;
+
+                $('#list input[type="checkbox"]').each(function () {
+                    if (this.checked) {
+                        checkedCount++;
+                    }
+                });
+
+                const perc = (checkedCount / totalQuestions) * 100;
+                
+                $('#score').text(checkedCount + "/" + totalQuestions);
+                $('#perc').text('You are ' + perc.toFixed(2) + '% Indian.');
+                $('#toHide').hide();
+                $('#results').show();
+            });
+
+            $('#retake-button').click(function () {
+                $('#list input[type="checkbox"]').prop('checked', false);
+                $('#results').hide();
+                $('#toHide').show();
+            });
+        });
+    </script>
+</body>
+</html>
